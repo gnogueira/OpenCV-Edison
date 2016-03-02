@@ -8,12 +8,12 @@ while(True):
     # Capta o video
     ret, frame = cap.read()
 
-    # TODO: Fazer os tratamentos e reconhecimentos aqui - INIICIO
+    # TODO: Fazer os tratamentos e reconhecimentos aqui - INICIO
     
     # Utilizando SIFT para reconhecimento do Objeto
     #detector = ObjectDetector.
     
-    # Fazer os tratamentos e reconhecimentos aqui - INIICIO
+    # Fazer os tratamentos e reconhecimentos aqui - FIM
     
 
     # Mostra o resultado
