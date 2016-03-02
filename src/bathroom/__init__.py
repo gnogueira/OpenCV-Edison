@@ -10,7 +10,8 @@ while(True):
 
     # TODO: Fazer os tratamentos e reconhecimentos aqui - INIICIO
     
-    
+    # Utilizando SIFT para reconhecimento do Objeto
+    #detector = ObjectDetector.
     
     # Fazer os tratamentos e reconhecimentos aqui - INIICIO
     
