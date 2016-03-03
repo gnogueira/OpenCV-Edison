@@ -7,7 +7,7 @@ from ObjectDetector import ObjectDetector
 #------------ CONSTANTES - INICIO ------------
 
 #Metodo que sera usado na comparacao do objeto
-MATCH_METHOD = "sift"
+MATCH_METHOD = "surf"
 
 #Caminho da imagem base de comparacao do objeto
 IMG_SOURCE = "../../resources/banheiro_fora_de_uso.png"
@@ -15,6 +15,9 @@ IMG_SOURCE = "../../resources/banheiro_fora_de_uso.png"
 #------------ CONSTANTES - FIM ------------
 
 cap = cv2.VideoCapture(0)
+
+# Monta o objeto de deteccao
+obj_detector = ObjectDetector(MATCH_METHOD,IMG_SOURCE)
 
 while(True):
     # Capta o video
@@ -28,8 +31,7 @@ while(True):
     
     # Detectando o Objeto
     # TODO: esta muito lento. Verificar.
-    detector = ObjectDetector(MATCH_METHOD,IMG_SOURCE)
-    detector.detect_object(frame)
+    obj_detector.detect_object(frame)
     
     #Detectando e Contando Pessoas
     # TODO: fazer tratamento

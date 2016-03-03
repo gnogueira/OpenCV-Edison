@@ -79,7 +79,7 @@ class ObjectDetector(object):
             H, status = None, None
             print '%d matches found, not enough for homography estimation' % len(p1)
         
-        # TODO: Terminar comparação
+        # TODO: Terminar comparacao
         #vis = explore_match(win, img1, img2, kp_pairs, status, H)
         
         
