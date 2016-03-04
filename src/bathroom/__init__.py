@@ -16,7 +16,7 @@ IMG_SOURCE = "../../resources/banheiro_fora_de_uso.png"
 
 cap = cv2.VideoCapture(0)
 
-# Monta o objeto de deteccao
+# Monta o objeto de deteccao de objetos
 obj_detector = ObjectDetector(MATCH_METHOD,IMG_SOURCE)
 
 while(True):
@@ -42,6 +42,7 @@ while(True):
     # Mostra o resultado
     cv2.imshow('frame',frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
+        print "Terminando Aplicacao"
         break
 
 cap.release()
